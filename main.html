@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="script/index.js" defer />
+    <script src="script/bootstrap.min.js" defer></script>
+    <script src="script/clock.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="headerClock">
+            <div id="clock"></div>
+        </div>
+        <div id="header" class="RetroBlue">
+            <a href="main.html">
+                <img class="headerLogo" src="images/A2Z1.png">
+            </a>
+            <div id="headerNav" class="headerNav">
+                <nav class="topNav" id="myTopNav">
+
+                    <a href="purpose.html">Purpose / Mission statement</a>
+                    <a href="#offerings">About us</a>
+                    <a href="contact-us.html">Contact Us</a>
+
+                </nav>
+            </div>
+            <div id="headerLogin" class="headerLogin">
+                <div class="loginBtn">
+
+                    <img class="loginBtn1" src="images/user.png" alt="LogIn" />
+                </div>
+                <div id="searchBtn">
+                    <input class="search">
+                </div>
+            </div>
+        </div>
+        <div id="headerRes" class="RetroBlue">
+            <div class="headerNav">
+                <nav class="topNavRes" id="myTopNavRes">
+
+                    <a href="purpose.html">Purpose / Mission statement</a>
+                    <a href="#offerings">About us</a>
+                    <a href="contact-us.html">Contact Us</a>
+                    <a href="#values">LogIn</a>
+
+                </nav>
+                <a id="iconClick" href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                    <p class="visually-hidden">Responsiv Nav Bar</p>
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="headerLogin">
+                <div class="loginBtn">
+
+                    <img class="loginBtn1" src="images/user.png" alt="LogIn" />
+                </div>
+                <div id="searchBtn">
+                    <input class="search">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <button type="button" class="btn btn-floating" id="btn-back-to-top">
+            <b class="visually-hidden">Back to top</b>
+            <i class="fa fa-angle-double-up"></i>
+        </button>
+
+
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                    <div class="carousel__slide__img">
+                        <img class="carousel__slide__img__internal" src="images/slide3.jpg" alt="carouselImg" />
+                    </div>
+                    <div class="carousel__slide__text">
+                        <h1>History</h1>
+                        <p>Reusing materials has been a common practice for most of human history with recorded
+                            advocates as far back as Plato in the fourth century BC.[7] During periods when resources
+                            were scarce, archaeological studies of ancient waste dumps show less household waste (such
+                            as ash, broken tools, and pottery), implying that more waste was recycled in place of new
+                            material.[8] However, archaeological artefacts made from recyclable material, such as glass
+                            or metal, may neither be the original object nor resemble it, with the consequence that a
+                            successful ancient recycling economy can become invisible when recycling is synonymous with
+                            re-melting rather than reuse</p>.
+                    </div>
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
+                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                    </div>
+                </li>
+                <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                    <div class="carousel__slide__img">
+                        <img class="carousel__slide__img__internal" src="images/slide1.jpg" alt="carouselImg" />
+                    </div>
+                    <div class="carousel__slide__text">
+                        <h1>What is Recycling?</h1>
+                        <p>Recycling is the process of converting waste materials into new
+                            materials and objects. This
+                            concept often includes the recovery of energy from waste materials. The recyclability of a
+                            material depends on its ability to reacquire the properties it had in its original state.
+                            It
+                            is an alternative to "conventional" waste disposal that can save material and help lower
+                            greenhouse gas emissions. It can also prevent the waste of potentially useful materials and
+                            reduce the consumption of fresh raw materials, reducing energy use, air pollution (from
+                            incineration) and water pollution (from landfilling).</p>
+                    </div>
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                    <div class="carousel__slide__img">
+                        <img class="carousel__slide__img__internal" src="images/slide2.jpg" alt="carouselImg" />
+                    </div>
+                    <div class="carousel__slide__text">
+                        <h1>Wartime</h1>
+                        <p>
+
+                            American poster from World War II
+
+                            British poster from World War II
+
+                            Poster from wartime Canada, encouraging housewives to "salvage"
+
+                            Remnants of iron fence bars in York Whip-Ma-Whop-Ma-Gate. Such public property fences were
+                            sawed for the iron and recycled during World War II.
+                            New chemical industries created in the late 19th century both invented new materials (e.g.
+                            Bakelite in 1907) and promised to transform valueless into valuable materials. Proverbially,
+                            you could not make a silk purse of a sow's ear—until the US firm Arthur D. Little published
+                            in 1921 "On the Making of Silk Purses from Sows' Ears", its research proving that when
+                            "chemistry puts on overalls and gets down to business [...] new values appear. New and
+                            better paths are opened to reach the goals desired."</p>
+                    </div>
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide1" class="carousel__next">Go to next slide</a>
+                </li>
+            </ol>
+            <aside class="carousel__navigation">
+                <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                </ol>
+            </aside>
+           
+        </section>
+        <div class="more"><a href="#"><img src="images/More.png"></a>
+            </div>
+        <hr>
+
+        <section>
+            <img id="newsImgTop" src="images/News.png" alt="news" />
+            <div class="newsSection">
+                <div class="news">
+                    <img class="newsImage" src="images/news3.jpg" />
+                    <h3>Cardboard factory fire burns for hours in Adelaide's north</h1>
+                        <a href="#">
+                            <p class="newsText">Smoke has been billowing out of the factory since it began, partially
+                                caused
+                                by
+                                plastic burning
+                                alongside the cardboard.
+                                There is no threat to neighbouring businesses.
+                                YCA Recycling has been contacted for comment by 9News.</p>
+                        </a>
+                        <p class="newsDate">12/04/2024</p>
+                </div>
+                <div class="news">
+                    <img class="newsImage" src="images/news1.jpg" />
+                    <h3>How to reduce waste this Christmas</h1>
+                        <a href="#">
+                            <p class="newsText">Australians will trash $921 million worth of unwanted Christmas gifts
+                                this
+                                year
+                                which will likely end up in landfill, research has claimed.</p>
+                        </a>
+                        <p class="newsDate">23/01/2024</p>
+                </div>
+                <div class="news">
+                    <img class="newsImage" src="images/news.jpg" />
+                    <h3>Recycled water could be key to resolving shortage fears</h1>
+                        <a href="#">
+                            <p class="newsText">Recycled water treatment plants in Bundamba, Luggage Point and Gibson
+                                Island
+                                would feed water to Wivenhoe Dam if the proposal is accepted.</p>
+                        </a>
+                        <p class="newsDate">02/11/2023</p>
+                </div>
+            </div>
+            <div class="more"><a href="news.html"><img src="images/More.png"></a>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <img id="newsImgTop" src="images/Projects.png" alt="news" />
+            <div>
+                <div class="scroller" data-direction="right" data-speed="slow">
+                    <div class="scroller__inner">
+                        <a href="#"> <img src="images/p1.jpg" alt="Company1" title="Company1" /></a>
+                        <a href="#"> <img src="images/p2.jpg" alt="Company2" title="Company2" /></a>
+                        <a href="#"> <img src="images/p5.png" alt="Company3" title="Company3" /></a>
+                        <a href="#"> <img src="images/p6.png" alt="Company4" title="Company4" /></a>
+                        <a href="#"> <img src="images/p7.png" alt="Company5" title="Company5" /></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="more"><a href="#"><img src="images/More.png"></a>
+            </div>
+        </section>
+        <!--<hr>-->
+        <footer>
+            <img src="images/A2Z1.png" alt="footer">
+            <div>&copy; ALL OF THE RIGHTS RESERVED</div>
+        </footer>
+    </main>
+</body>
+<script>
+
+    // When the user scrolls the page, execute stickyNav
+    window.onscroll = function () {
+        stickyNav();
+        scrollFunction();
+    };
+    // Get the navbar
+    var navbar = document.querySelector("#header");
+    var headerRes = document.querySelector("#headerRes");
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function stickyNav() {
+        if (window.pageYOffset > sticky) {
+            navbar.classList.add("stickyNav");
+            navbar.classList.remove("nav");
+            headerRes.classList.add("stickyNavRes");
+        } else {
+            navbar.classList.remove("stickyNav");
+            navbar.classList.add("nav");
+            headerRes.classList.remove("stickyNavRes");
+        }
+    }
+    let mybutton = document.getElementById("btn-back-to-top");
+    // When the user scrolls down 20px from the top of the document, show the button
+    function scrollFunction() {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+
+    // https://codepen.io/kevinpowell/pen/BavVLra
+    const scrollers = document.querySelectorAll(".scroller");
+
+    // If a user hasn't opted in for recuded motion, then we add the animation
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        addAnimation();
+    }
+
+    function addAnimation() {
+        scrollers.forEach((scroller) => {
+            // add data-animated="true" to every `.scroller` on the page
+            scroller.setAttribute("data-animated", true);
+
+            // Make an array from the elements within `.scroller-inner`
+            const scrollerInner = scroller.querySelector(".scroller__inner");
+            const scrollerContent = Array.from(scrollerInner.children);
+
+            // For each item in the array, clone it
+            // add aria-hidden to it
+            // add it into the `.scroller-inner`
+            scrollerContent.forEach((item) => {
+                const duplicatedItem = item.cloneNode(true);
+                duplicatedItem.setAttribute("aria-hidden", true);
+                scrollerInner.appendChild(duplicatedItem);
+            });
+        });
+    }
+    function truncate(str, num) {
+        if (str.length <= num) {
+            return str;
+        }
+
+        let truncatedStr = str.slice(0, num);
+        let lastSpaceIndex = truncatedStr.lastIndexOf(' ');
+
+        if (lastSpaceIndex > 0) {
+            truncatedStr = truncatedStr.slice(0, lastSpaceIndex);
+        }
+
+        return truncatedStr + '...';
+    }
+
+    const newsTextElements = document.querySelectorAll('.newsText');
+    const maxLength = 150;
+
+
+    newsTextElements.forEach(element => {
+        element.textContent = truncate(element.textContent, maxLength);
+    });
+    if (window.innerWidth < 960) {
+        function truncate(str, num) {
+            if (str.length <= num) {
+                return str;
+            }
+
+            let truncatedStr = str.slice(0, num);
+            let lastSpaceIndex = truncatedStr.lastIndexOf(' ');
+
+            if (lastSpaceIndex > 0) {
+                truncatedStr = truncatedStr.slice(0, lastSpaceIndex);
+            }
+
+            return truncatedStr + '...';
+        }
+
+        const carouselText = document.querySelectorAll('.carousel__slide__text');
+        const maxLengthCarousel = 250;
+
+
+        carouselText.forEach(element => {
+            element.textContent = truncate(element.textContent, maxLengthCarousel);
+        });
+    }
+
+</script>
+
+</html>
