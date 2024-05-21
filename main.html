@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/index.css" />
@@ -328,7 +328,7 @@
     newsTextElements.forEach(element => {
         element.textContent = truncate(element.textContent, maxLength);
     });
-    if (window.innerWidth < 960) {
+    // if (window.innerWidth < 960) {
         function truncate(str, num) {
             if (str.length <= num) {
                 return str;
@@ -345,13 +345,13 @@
         }
 
         const carouselText = document.querySelectorAll('.carousel__slide__text');
-        const maxLengthCarousel = 250;
+        const maxLengthCarousel = 270;
 
 
         carouselText.forEach(element => {
             element.textContent = truncate(element.textContent, maxLengthCarousel);
         });
-    }
+    // }
 
 </script>
 
