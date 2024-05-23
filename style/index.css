@@ -338,6 +338,7 @@ li {
 .carousel__navigation-list,
 .carousel__navigation-item {
   display: inline-block;
+  padding-top: 2em;
 }
 
 .carousel__navigation-button {
@@ -1027,10 +1028,10 @@ hr {
 }
 /* ***** */
 /* purpose */
-#purpose{
+#purpose {
   width: 80%;
   margin: 0 auto;
 }
-#purpose li{
+#purpose li {
   list-style: circle;
 }

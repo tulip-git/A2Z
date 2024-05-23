@@ -245,14 +245,18 @@
         }
 
         return truncatedStr + ' ...';
-    } const newsTextElements = document.querySelectorAll('.newsText'); const
-        maxLength = 150; newsTextElements.forEach(element => {
+    }
+    const newsTextElements = document.querySelectorAll('.newsText');
+    const maxLength = 150;
+    newsTextElements.forEach(element => {
             element.textContent = truncate(element.textContent, maxLength);
         });
     if (window.innerWidth < 960) {
-        function truncate(str, num) {
-            if (str.length <= num) { return str; } let
-                truncatedStr = str.slice(0, num); let lastSpaceIndex = truncatedStr.lastIndexOf(' ');
+        maxLength = 50
+        function truncate(newsTextElements, maxLength) {
+            if (str.length <= num) { return str; } 
+            let truncatedStr = str.slice(0, maxLength); 
+            let lastSpaceIndex = truncatedStr.lastIndexOf(' ');
 
             if (lastSpaceIndex > 0) {
                 truncatedStr = truncatedStr.slice(0, lastSpaceIndex);
