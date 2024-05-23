@@ -71,7 +71,7 @@ section {
   margin: 0 auto;
 }
 header {
-  background-image: url("/images/header.jpg");
+  background-image: url("../images/header.jpg");
   width: 100%;
   height: 25em;
   background-size: cover;
@@ -146,7 +146,7 @@ header {
   align-items: center;
 }
 .loginBtn img:hover {
-  content: url("/images/userOver.png");
+  content: url("../images/userOver.png");
   cursor: pointer;
 }
 
@@ -160,7 +160,7 @@ input.search {
   border: 2px solid #ac5316;
   display: block;
   padding: 9px 4px 9px 40px;
-  background: transparent url("/images/Search.png") no-repeat 13px;
+  background: transparent url("../images/Search.png") no-repeat 13px;
   border-radius: 5em;
 }
 .search:focus-visible {
