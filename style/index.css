@@ -338,7 +338,6 @@ li {
 .carousel__navigation-list,
 .carousel__navigation-item {
   display: inline-block;
-  padding-top: 2em;
 }
 
 .carousel__navigation-button {
@@ -998,7 +997,7 @@ hr {
   }
   .carousel {
     position: relative;
-    padding-top: 40%;
+    padding-top: 50%;
   }
 
   @media screen and (max-width: 420px) {
