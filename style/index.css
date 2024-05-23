@@ -284,15 +284,7 @@ li {
   background-color: rgb(111 186 217 / 21%);
 } */
 
-.carousel__slide:before {
-  content: counter(item);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -40%, 70px);
-  color: #fff;
-  font-size: 2em;
-}
+
 
 .carousel__snapper {
   position: absolute;
@@ -981,6 +973,10 @@ hr {
     width: 100%;
     padding: 0.5em;
   }
+  .carousel {
+    position: relative;
+    padding-top: 50%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -995,10 +991,7 @@ hr {
   #form_button {
     padding: 15px 25px;
   }
-  .carousel {
-    position: relative;
-    padding-top: 50%;
-  }
+}
 
   @media screen and (max-width: 420px) {
     h1 {
@@ -1024,7 +1017,6 @@ hr {
   #container h1 {
     color: #ffa200;
   }
-}
 /* ***** */
 /* purpose */
 #purpose {
