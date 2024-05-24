@@ -284,8 +284,6 @@ li {
   background-color: rgb(111 186 217 / 21%);
 } */
 
-
-
 .carousel__snapper {
   position: absolute;
   top: 0;
@@ -525,7 +523,7 @@ footer {
   padding-left: 0.6em;
   padding-right: 0.6em;
   margin-top: 0.8em;
-  font-size: .8em;
+  font-size: 0.8em;
   align-items: center;
 }
 footer img {
@@ -977,11 +975,11 @@ hr {
   }
   .carousel {
     position: relative;
-    padding-top: 60%;
+    padding-top: 40%;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   h1 {
     font-size: 26px;
   }
@@ -989,36 +987,41 @@ hr {
   .underline {
     width: 68px;
   }
-
+  .news {
+    width: 80%;
+  }
   #form_button {
     padding: 15px 25px;
   }
+  .carousel {
+    padding-top: 70%;
+  }
 }
 
-  @media screen and (max-width: 420px) {
-    h1 {
-      font-size: 18px;
-    }
-
-    .icon {
-      height: 35px;
-      width: 35px;
-    }
-
-    .underline {
-      width: 53px;
-    }
-
-    input[type="text"],
-    [type="email"],
-    select,
-    textarea {
-      font-size: 0.875em;
-    }
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
   }
-  #container h1 {
-    color: #ffa200;
+
+  .icon {
+    height: 35px;
+    width: 35px;
   }
+
+  .underline {
+    width: 53px;
+  }
+
+  input[type="text"],
+  [type="email"],
+  select,
+  textarea {
+    font-size: 0.875em;
+  }
+}
+#container h1 {
+  color: #ffa200;
+}
 /* ***** */
 /* purpose */
 #purpose {
