@@ -559,7 +559,7 @@ footer img {
     width: 3em;
   }
   .stickyNavRes {
-    top: 32px;
+    top: 31px;
     position: fixed;
     width: 100%;
     overflow: hidden;
@@ -609,7 +609,7 @@ footer img {
   }
   .headerLogin {
     justify-content: right;
-    margin-right: 1em;
+    margin-right: 2em;
   }
 
   .carousel__slide__img {
