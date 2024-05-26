@@ -218,7 +218,7 @@
                         <a href="#"> <img src="images/p2.jpg" alt="Company2" title="Company2" /></a>
                         <a href="#"> <img src="images/p5.png" alt="Company3" title="Company3" /></a>
                         <a href="#"> <img src="images/p6.png" alt="Company4" title="Company4" /></a>
-                      
+                        <a href="#"> <img src="images/p7.png" alt="Company5" title="Company5" /></a>
 
                     </div>
                 </div>
@@ -287,25 +287,7 @@
         addAnimation();
     }
 
-    function addAnimation() {
-        scrollers.forEach((scroller) => {
-            // add data-animated="true" to every `.scroller` on the page
-            scroller.setAttribute("data-animated", true);
-
-            // Make an array from the elements within `.scroller-inner`
-            const scrollerInner = scroller.querySelector(".scroller__inner");
-            const scrollerContent = Array.from(scrollerInner.children);
-
-            // For each item in the array, clone it
-            // add aria-hidden to it
-            // add it into the `.scroller-inner`
-            scrollerContent.forEach((item) => {
-                const duplicatedItem = item.cloneNode(true);
-                duplicatedItem.setAttribute("aria-hidden", true);
-                scrollerInner.appendChild(duplicatedItem);
-            });
-        });
-    }
+    
     function truncate(str, num) {
         if (str.length <= num) {
             return str;
