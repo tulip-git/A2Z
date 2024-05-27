@@ -221,7 +221,7 @@ input.search:hover {
 .carousel{
   box-sizing: border-box;
   scrollbar-color: transparent transparent; /* thumb and track color */
-  scrollbar-width: none;
+  scrollbar-width: .5px;
 }
 
 *::-webkit-scrollbar {
