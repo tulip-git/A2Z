@@ -224,8 +224,22 @@ input.search:hover {
   scrollbar-width: none;
 }
 
+/**::-webkit-scrollbar {
+  width: 0;
+}
 
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
 
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}*/
+
+* {
+  -ms-overflow-style: none;
+}
 
 ol,
 li {
@@ -413,8 +427,8 @@ li {
   min-height: 4em;
 }
 .newsImage {
-  height: 200px;
-  width: 100%;
+  height: 250px;
+  width: 321px;
   text-align: center;
   padding-bottom: 1em;
 }
