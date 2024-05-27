@@ -218,7 +218,7 @@ input.search:hover {
     scroll-snap-align: center;
   }
 }
-* {
+.carousel{
   box-sizing: border-box;
   scrollbar-color: transparent transparent; /* thumb and track color */
   scrollbar-width: 0px;
@@ -469,7 +469,6 @@ li {
     white 80%,
     transparent
   );
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .scroller[data-animated="true"] .scroller__inner {
