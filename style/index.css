@@ -220,25 +220,12 @@ input.search:hover {
 }
 .carousel{
   box-sizing: border-box;
- 
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: none;
 }
 
-*::-webkit-scrollbar {
-  width: 0;
-}
 
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
 
-*::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-}
-
-* {
-  -ms-overflow-style: none;
-}
 
 ol,
 li {
