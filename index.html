@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="script/index.js" defer ></script>
+    <script src="script/index.js" defer></script>
     <script src="script/bootstrap.min.js" defer></script>
     <script src="script/clock.js" defer></script>
 </head>
@@ -39,7 +39,7 @@
                     <img class="loginBtn1" src="images/user.png" alt="LogIn" />
                 </div>
                 <div id="searchBtn">
-                    <input id="search"  class="search">
+                    <input id="search" class="search">
                 </div>
             </div>
         </div>
@@ -159,10 +159,10 @@
                     </li>
                 </ol>
             </aside>
-           
+
         </section>
         <div class="more"><a href="#"><img src="images/More.png" alt="more button"></a>
-            </div>
+        </div>
         <hr>
 
         <section>
@@ -171,37 +171,37 @@
                 <div class="news">
                     <img class="newsImage" src="images/news3.jpg" alt="news" />
                     <h3>Cardboard factory fire burns for hours in Adelaide's north</h3>
-                        <a href="#">
-                            <p class="newsText">Smoke has been billowing out of the factory since it began, partially
-                                caused
-                                by
-                                plastic burning
-                                alongside the cardboard.
-                                There is no threat to neighbouring businesses.
-                                YCA Recycling has been contacted for comment by 9News.</p>
-                        </a>
-                        <p class="newsDate">12/04/2024</p>
+                    <a href="#">
+                        <p class="newsText">Smoke has been billowing out of the factory since it began, partially
+                            caused
+                            by
+                            plastic burning
+                            alongside the cardboard.
+                            There is no threat to neighbouring businesses.
+                            YCA Recycling has been contacted for comment by 9News.</p>
+                    </a>
+                    <p class="newsDate">12/04/2024</p>
                 </div>
                 <div class="news">
                     <img class="newsImage" src="images/news1.jpg" alt="news" />
                     <h3>How to reduce waste this Christmas</h3>
-                        <a href="#">
-                            <p class="newsText">Australians will trash $921 million worth of unwanted Christmas gifts
-                                this
-                                year
-                                which will likely end up in landfill, research has claimed.</p>
-                        </a>
-                        <p class="newsDate">23/01/2024</p>
+                    <a href="#">
+                        <p class="newsText">Australians will trash $921 million worth of unwanted Christmas gifts
+                            this
+                            year
+                            which will likely end up in landfill, research has claimed.</p>
+                    </a>
+                    <p class="newsDate">23/01/2024</p>
                 </div>
                 <div class="news">
-                    <img class="newsImage" src="images/news.jpg" alt="news"/>
+                    <img class="newsImage" src="images/news.jpg" alt="news" />
                     <h3>Recycled water could be key to resolving shortage fears</h3>
-                        <a href="#">
-                            <p class="newsText">Recycled water treatment plants in Bundamba, Luggage Point and Gibson
-                                Island
-                                would feed water to Wivenhoe Dam if the proposal is accepted.</p>
-                        </a>
-                        <p class="newsDate">02/11/2023</p>
+                    <a href="#">
+                        <p class="newsText">Recycled water treatment plants in Bundamba, Luggage Point and Gibson
+                            Island
+                            would feed water to Wivenhoe Dam if the proposal is accepted.</p>
+                    </a>
+                    <p class="newsDate">02/11/2023</p>
                 </div>
             </div>
             <div class="more"><a href="news.html"><img src="images/More.png" alt="more button"></a>
@@ -232,104 +232,104 @@
             <div>&copy; ALL OF THE RIGHTS RESERVED</div>
         </footer>
     </main>
-</body>
-<script>
 
-    // When the user scrolls the page, execute stickyNav
-    window.onscroll = function () {
-        stickyNav();
-        scrollFunction();
-    };
-    // Get the navbar
-    var navbar = document.querySelector("#header");
-    var headerRes = document.querySelector("#headerRes");
-    // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
+    <script>
 
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function stickyNav() {
-        if (window.pageYOffset > sticky) {
-            navbar.classList.add("stickyNav");
-            navbar.classList.remove("nav");
-            headerRes.classList.add("stickyNavRes");
-        } else {
-            navbar.classList.remove("stickyNav");
-            navbar.classList.add("nav");
-            headerRes.classList.remove("stickyNavRes");
+        // When the user scrolls the page, execute stickyNav
+        window.onscroll = function () {
+            stickyNav();
+            scrollFunction();
+        };
+        // Get the navbar
+        var navbar = document.querySelector("#header");
+        var headerRes = document.querySelector("#headerRes");
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function stickyNav() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("stickyNav");
+                navbar.classList.remove("nav");
+                headerRes.classList.add("stickyNavRes");
+            } else {
+                navbar.classList.remove("stickyNav");
+                navbar.classList.add("nav");
+                headerRes.classList.remove("stickyNavRes");
+            }
         }
-    }
-    let mybutton = document.getElementById("btn-back-to-top");
-    // When the user scrolls down 20px from the top of the document, show the button
-    function scrollFunction() {
-        if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-        ) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
+        let mybutton = document.getElementById("btn-back-to-top");
+        // When the user scrolls down 20px from the top of the document, show the button
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
         }
-    }
-    // When the user clicks on the button, scroll to the top of the document
-    mybutton.addEventListener("click", backToTop);
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
 
-    function backToTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
 
 
-    // https://codepen.io/kevinpowell/pen/BavVLra
-    const scrollers = document.querySelectorAll(".scroller");
+        // https://codepen.io/kevinpowell/pen/BavVLra
+        const scrollers = document.querySelectorAll(".scroller");
 
-    // If a user hasn't opted in for recuded motion, then we add the animation
-    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        addAnimation();
-    }
+        // If a user hasn't opted in for recuded motion, then we add the animation
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            addAnimation();
+        }
 
-    function addAnimation() {
-        scrollers.forEach((scroller) => {
-            // add data-animated="true" to every `.scroller` on the page
-            scroller.setAttribute("data-animated", true);
+        function addAnimation() {
+            scrollers.forEach((scroller) => {
+                // add data-animated="true" to every `.scroller` on the page
+                scroller.setAttribute("data-animated", true);
 
-            // Make an array from the elements within `.scroller-inner`
-            const scrollerInner = scroller.querySelector(".scroller__inner");
-            const scrollerContent = Array.from(scrollerInner.children);
+                // Make an array from the elements within `.scroller-inner`
+                const scrollerInner = scroller.querySelector(".scroller__inner");
+                const scrollerContent = Array.from(scrollerInner.children);
 
-            // For each item in the array, clone it
-            // add aria-hidden to it
-            // add it into the `.scroller-inner`
-            scrollerContent.forEach((item) => {
-                const duplicatedItem = item.cloneNode(true);
-                duplicatedItem.setAttribute("aria-hidden", true);
-                scrollerInner.appendChild(duplicatedItem);
+                // For each item in the array, clone it
+                // add aria-hidden to it
+                // add it into the `.scroller-inner`
+                scrollerContent.forEach((item) => {
+                    const duplicatedItem = item.cloneNode(true);
+                    duplicatedItem.setAttribute("aria-hidden", true);
+                    scrollerInner.appendChild(duplicatedItem);
+                });
             });
+        }
+
+        function truncate(str, num) {
+            if (str.length <= num) {
+                return str;
+            }
+
+            let truncatedStr = str.slice(0, num);
+            let lastSpaceIndex = truncatedStr.lastIndexOf(' ');
+
+            if (lastSpaceIndex > 0) {
+                truncatedStr = truncatedStr.slice(0, lastSpaceIndex);
+            }
+
+            return truncatedStr + '...';
+        }
+
+        const newsTextElements = document.querySelectorAll('.newsText');
+        const maxLength = 150;
+
+
+        newsTextElements.forEach(element => {
+            element.textContent = truncate(element.textContent, maxLength);
         });
-    }
-    
-    function truncate(str, num) {
-        if (str.length <= num) {
-            return str;
-        }
-
-        let truncatedStr = str.slice(0, num);
-        let lastSpaceIndex = truncatedStr.lastIndexOf(' ');
-
-        if (lastSpaceIndex > 0) {
-            truncatedStr = truncatedStr.slice(0, lastSpaceIndex);
-        }
-
-        return truncatedStr + '...';
-    }
-
-    const newsTextElements = document.querySelectorAll('.newsText');
-    const maxLength = 150;
-
-
-    newsTextElements.forEach(element => {
-        element.textContent = truncate(element.textContent, maxLength);
-    });
-    // if (window.innerWidth < 960) {
+        // if (window.innerWidth < 960) {
         function truncate(str, num) {
             if (str.length <= num) {
                 return str;
@@ -352,8 +352,9 @@
         carouselText.forEach(element => {
             element.textContent = truncate(element.textContent, maxLengthCarousel);
         });
-    // }
+        // }
 
-</script>
+    </script>
+</body>
 
 </html>
