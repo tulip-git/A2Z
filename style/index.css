@@ -414,7 +414,7 @@ li {
   justify-content: space-between;
   margin-top: 3em;
 }
-#newsImgTop {
+.newsImgTop {
   margin-left: 2em;
 }
 .news {
