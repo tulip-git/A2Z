@@ -22,7 +22,7 @@
         </div>
         <div id="header" class="RetroBlue">
             <a href="main.html">
-                <img class="headerLogo" src="images/A2Z1.png">
+                <img class="headerLogo" src="images/A2Z1.png" alt="Header Logo">
             </a>
             <div id="headerNav" class="headerNav">
                 <nav class="topNav" id="myTopNav">
@@ -161,7 +161,7 @@
             </aside>
            
         </section>
-        <div class="more"><a href="#"><img src="images/More.png"></a>
+        <div class="more"><a href="#"><img src="images/More.png" alt="more button"></a>
             </div>
         <hr>
 
@@ -169,7 +169,7 @@
             <img id="newsImgTop" src="images/News.png" alt="news" />
             <div class="newsSection">
                 <div class="news">
-                    <img class="newsImage" src="images/news3.jpg" />
+                    <img class="newsImage" src="images/news3.jpg" alt="news" />
                     <h3>Cardboard factory fire burns for hours in Adelaide's north</h1>
                         <a href="#">
                             <p class="newsText">Smoke has been billowing out of the factory since it began, partially
@@ -183,7 +183,7 @@
                         <p class="newsDate">12/04/2024</p>
                 </div>
                 <div class="news">
-                    <img class="newsImage" src="images/news1.jpg" />
+                    <img class="newsImage" src="images/news1.jpg" alt="news" />
                     <h3>How to reduce waste this Christmas</h1>
                         <a href="#">
                             <p class="newsText">Australians will trash $921 million worth of unwanted Christmas gifts
@@ -194,7 +194,7 @@
                         <p class="newsDate">23/01/2024</p>
                 </div>
                 <div class="news">
-                    <img class="newsImage" src="images/news.jpg" />
+                    <img class="newsImage" src="images/news.jpg" alt="news"/>
                     <h3>Recycled water could be key to resolving shortage fears</h1>
                         <a href="#">
                             <p class="newsText">Recycled water treatment plants in Bundamba, Luggage Point and Gibson
@@ -204,7 +204,7 @@
                         <p class="newsDate">02/11/2023</p>
                 </div>
             </div>
-            <div class="more"><a href="news.html"><img src="images/More.png"></a>
+            <div class="more"><a href="news.html"><img src="images/More.png" alt="more button"></a>
             </div>
         </section>
         <hr>
@@ -223,7 +223,7 @@
                     </div>
                 </div>
             </div>
-            <div class="more"><a href="#"><img src="images/More.png"></a>
+            <div class="more"><a href="#"><img src="images/More.png" alt="more button"></a>
             </div>
         </section>
         <!--<hr>-->
@@ -287,6 +287,25 @@
         addAnimation();
     }
 
+    function addAnimation() {
+        scrollers.forEach((scroller) => {
+            // add data-animated="true" to every `.scroller` on the page
+            scroller.setAttribute("data-animated", true);
+
+            // Make an array from the elements within `.scroller-inner`
+            const scrollerInner = scroller.querySelector(".scroller__inner");
+            const scrollerContent = Array.from(scrollerInner.children);
+
+            // For each item in the array, clone it
+            // add aria-hidden to it
+            // add it into the `.scroller-inner`
+            scrollerContent.forEach((item) => {
+                const duplicatedItem = item.cloneNode(true);
+                duplicatedItem.setAttribute("aria-hidden", true);
+                scrollerInner.appendChild(duplicatedItem);
+            });
+        });
+    }
     
     function truncate(str, num) {
         if (str.length <= num) {
