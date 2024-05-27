@@ -434,14 +434,14 @@ li {
 }
 .newsText {
   min-height: 3em;
-  color: #837c7c;
+  color: #605a5a;
 }
 .newsText:hover {
   color: #0156a3;
 }
 .newsDate {
   text-align: right;
-  color: #837c7c;
+  color: #787070;
 }
 .news a {
   text-decoration: none;
@@ -518,7 +518,7 @@ footer {
   justify-content: space-between;
   background-color: #0156a3;
   height: 2em;
-  color: rgb(234, 182, 102);
+  color: rgb(255, 196, 106);
   padding-left: 0.6em;
   padding-right: 0.6em;
   margin-top: 0.8em;
