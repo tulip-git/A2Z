@@ -428,7 +428,7 @@ li {
 }
 .newsImage {
   height: 250px;
-  width: 321px;
+  width: 100%;
   text-align: center;
   padding-bottom: 1em;
 }
